@@ -3,7 +3,7 @@ import React from "react";
 function aboutme() {
     return (
         <div className="about">
-        <img src='./images/MedFuse-36.jpg' alt='dats me' />
+        <img src='./images/MedFuse-36.JPG' alt='dats me' />
         <p>
             My name is Sonny Tedesco! 
             I was born and raised in Harlem, New York. 
