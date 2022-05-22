@@ -13,3 +13,6 @@ Needs react (17.0.2) to run locally. Simply download the repo, and run ``` npm i
 
 # Creation
 Mostly worked with ``` useState ``` to change what is getting rendered ont he same page. What I did was create separate index.js components returning html to be loaded when it was called upon (i.e. clicking on the spot on the navbar). The contact me portion is slightly different, where it loads an entirely different input component to write an email vs viewing the rest of the site.
+
+Preview of site:
+![readmepic](./public/images/readmepic.png)
