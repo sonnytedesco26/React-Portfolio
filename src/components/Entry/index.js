@@ -33,7 +33,8 @@ function Entry() {
                     </div>
                 </div>
             </div>
-            <div className='totheright'>the rest</div>
+            <div className='totheright'>
+            </div>
         </div>
     </div>
     );

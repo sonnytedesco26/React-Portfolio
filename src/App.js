@@ -1,28 +1,36 @@
 import React, {useState}  from 'react';
-import Entry from './components/Entry/index.js';
-import Navbar from './components/Navbar/index.js';
-import Stuff from './components/Stuff/index.js';
-import Contact from './components/Contact/index.js';
-import './App.css';
+import Navbar from './components/Navbar';
+import Entry from './components/Entry';
+import Contact from './components/Contact';
+import Work from './components/Work';
+import Display from './components/Display';
 
 function App() {
   const [spots] = useState([
     {
-      name: 'work', description: 'some projects I have made for school in the past'
+      name: 'work', 
+      description: 'some projects I have made for school in the past',
+      stuff: <Display />
     },
     {
-      name: 'resume', description: 'Resume'
+      name: 'resume', 
+      description: 'resume',
+      stuff: ''
     },
     {
-      name: 'about me', description: 'about me'
-    },
-    {
-      name: 'contact me', description: 'feel free to email me here'
+      name: 'about me', 
+      description: 'about me',
+      stuff: ''
     }
   ]);
 
   const [currentSpot, setCurrentSpot] = useState(spots[0]);
   const [contactSelected, setContactSelected] = useState(false);
+
+  const mainStyle = {
+    display:'flex',
+    alignItems: 'center'
+  };
 
   return (
     <div>
@@ -33,16 +41,16 @@ function App() {
         contactSelected = {contactSelected}
         setContactSelected = {setContactSelected}
       ></Navbar>
-      <main>
+    <main style={mainStyle}>
         {!contactSelected ? (
           <>
             <Entry></Entry>
-            <Stuff> currentSpot={currentSpot}</Stuff>
+            <Work currentSpot={currentSpot}></Work>
           </>
         ) : (
           <Contact></Contact>
         )}
-      </main>
+      </main>  
     </div>
   );
 }
