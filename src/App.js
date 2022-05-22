@@ -4,6 +4,7 @@ import Entry from './components/Entry';
 import Contact from './components/Contact';
 import Work from './components/Work';
 import Display from './components/Display';
+import Resume from './components/Resume';
 
 function App() {
   const [spots] = useState([
@@ -15,7 +16,7 @@ function App() {
     {
       name: 'resume', 
       description: 'resume',
-      stuff: ''
+      stuff: <Resume />
     },
     {
       name: 'about me', 
@@ -27,9 +28,9 @@ function App() {
   const [currentSpot, setCurrentSpot] = useState(spots[0]);
   const [contactSelected, setContactSelected] = useState(false);
 
+
   const mainStyle = {
-    display:'flex',
-    alignItems: 'center'
+    display:'flex'
   };
 
   return (

@@ -37,17 +37,17 @@ function Contact() {
 
   return (
     <section>
-      <h1>Send me an email here</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <h1>Feel free to email me!</h1>
+      <form className='contactform' id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label className='contactform' htmlFor="name">Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
+        <div className='contactform'>
           <label htmlFor="email">Email address:</label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div>
+        <div className='contactform'>
           <label htmlFor="message">Message:</label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
@@ -56,7 +56,7 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Send</button>
+        <button className='rain' type="submit">Send</button>
       </form>
     </section>
   );

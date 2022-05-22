@@ -1,0 +1,20 @@
+.projcase{
+    display:flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.proj{
+    justify-content: space-between;
+}
+
+.proj img{
+    border-radius:  10%;
+    filter:grayscale(100%)
+}
+
+.proj img:hover{
+    filter:grayscale(0%);
+    transition: 1s ;
+}
+

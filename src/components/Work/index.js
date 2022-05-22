@@ -1,12 +1,11 @@
 import React from 'react';
-import './work.css';
 
 function Work(x) {
     const {currentSpot} = x;
     return (
-    <section className='totheright'>
+    <section>
         <h1>{currentSpot.name}</h1>
-        <p>{currentSpot.stuff}</p> 
+        <div>{currentSpot.stuff}</div> 
     </section>
     )
 }
