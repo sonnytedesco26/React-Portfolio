@@ -34,7 +34,7 @@ function ProjectList() {
             </article>
             <article className="proj">
                 <h5>Car Dealership Inventory</h5>
-                <h6>Html/CSS/JS</h6>
+                <h6>JS/Handlebars/CSS</h6>
                 <a href="https://github.com/Xcamaj/Dealership-inventory"> 
                 <img src="images/carr.png" alt="Car Dealership Inventory" /> 
                 </a>

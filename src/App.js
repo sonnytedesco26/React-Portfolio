@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import Work from './components/Work';
 import Display from './components/Display';
 import Resume from './components/Resume';
+import Aboutme from './components/Aboutme';
 
 function App() {
   const [spots] = useState([
@@ -21,7 +22,7 @@ function App() {
     {
       name: 'about me', 
       description: 'about me',
-      stuff: ''
+      stuff: <Aboutme />
     }
   ]);
 
@@ -51,7 +52,11 @@ function App() {
         ) : (
           <Contact></Contact>
         )}
-      </main>  
+      </main> 
+      <div className='bottomicons'>
+       <a  href='https://github.com/sonnytedesco26'> <img src='./images/githubicon.png'/> </a>
+       <a  href='https://linkedin.com/in/steven-tedesco-57a19914b'> <img src='./images/linkedin.png'/> </a>
+      </div>
     </div>
   );
 }

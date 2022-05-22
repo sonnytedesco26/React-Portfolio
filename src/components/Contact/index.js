@@ -37,7 +37,7 @@ function Contact() {
 
   return (
     <section>
-      <h1>Feel free to email me!</h1>
+      <h2>Email me below</h2>
       <form className='contactform' id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label className='contactform' htmlFor="name">Name:</label>

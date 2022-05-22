@@ -9,12 +9,11 @@ function Entry() {
                 <div className='leftwrap'>
                     <h2 className='name'>Sonny</h2>
                     <h2 className='name'>Tedesco</h2>
-                    <p className='aboutme'>
-                    Born and raised in Harlem. 
+                    <p className='aboutme'> 
                     Currently working full time as
-                    a Programming Engineer at Medfuse,
+                    a Programming Engineer at DarkMatter,
                     and studying at Rutgers. I have experience 
-                    working with
+                    working with:
                     </p>
                     <div className='langWrap'>
                         <div className='langRotate'>
