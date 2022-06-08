@@ -33,10 +33,10 @@ function ProjectList() {
                 </a>
             </article>
             <article className="proj">
-                <h5>Car Dealership Inventory</h5>
-                <h6>JS/Handlebars/CSS</h6>
-                <a href="https://github.com/Xcamaj/Dealership-inventory"> 
-                <img src="images/carr.png" alt="Car Dealership Inventory" /> 
+                <h5>Marvel Character Saver</h5>
+                <h6>JS/HTML/CSS</h6>
+                <a href="https://github.com/sonnytedesco26/Marvel-Character-Saver"> 
+                <img src="images/spider.png" alt="Marvel Character Saver" /> 
                 </a>
             </article>
         </div>
